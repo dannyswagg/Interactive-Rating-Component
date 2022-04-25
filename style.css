@@ -8,6 +8,9 @@
 body {
   background-color: hsl(216, 12%, 8%);
 }
+.twrapper {
+  display: none;
+}
 .card {
   position: absolute;
   top: 50%;
@@ -52,7 +55,7 @@ p {
   background-color: hsl(25, 97%, 53%);
   transition: 0.2s ease-in-out;
 }
-.botn:focus{
+.botn:focus {
   background-color: hsl(217, 12%, 63%);
 }
 .btn-sub {
@@ -99,6 +102,12 @@ button:focus-visible {
 .p3 {
   line-height: 20px;
 }
-.ht{
+.ht {
   padding-top: 15px;
+}
+@media only screen and (max-device-width: 320px) {
+.card{
+  width: 325px;
+  padding: 15px;
+}
 }

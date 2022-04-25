@@ -1,3 +1,5 @@
+const btnSub = document.getElementById("btn-sub");
+
 function star1() {
   if ((texttosave = document.getElementById("A").innerHTML)) {
     localStorage.setItem("myRating", texttosave);
@@ -23,14 +25,10 @@ function star5() {
     localStorage.setItem("myRating", texttosave);
   }
 }
-
 function greeting() {
-  location.href = "index2.html";
+  document.getElementById("text").innerText =localStorage.getItem("myRating");
+  document.getElementById("twrapper").style.display = "block";
+  setTimeout(function () {
+    location.reload();
+  }, 2000);
 }
-
-function processUserInput(callback) {
-  document.getElementById("text").innerText = localStorage.getItem("myRating");
-  callback();
-}
-
-processUserInput();
