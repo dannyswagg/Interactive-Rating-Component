@@ -30,5 +30,5 @@ function greeting() {
   document.getElementById("twrapper").style.display = "block";
   setTimeout(function () {
     location.reload();
-  }, 2000);
+  }, 3500);
 }
